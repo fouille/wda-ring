@@ -1,9 +1,9 @@
-import { App } from 'https://cdn.jsdelivr.net/npm/@wazo/euc-plugins-sdk@0.0.22/lib/esm/app.js';
+import { app } from "./ring";
 
 
 let url;
 
-const app = new App();
+// const app = new App();
 
 const ringStorage = (action, ring) => {
   switch(action) {
