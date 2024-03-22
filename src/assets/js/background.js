@@ -31,7 +31,7 @@ const handleRing = (msg) => {
       ringStorage("delete")
       break;
     default:
-      const sound = `${url}/sounds/${ring}`;
+      const sound = `${url}/assets/sounds/${ring}`;
       ringStorage("set", sound);
       setRing(sound);
   }

@@ -40,8 +40,8 @@
       "position": 101,
       "name": "Ringtone",
       "contentUrl": "./index.html",
-      "icon": "./logo.png"
+      "icon": "./assets/img/logo.png"
     }
   ],
-  "backgroundScript": "./background.js"
+  "backgroundScript": "./assets/js/background.js"
 }

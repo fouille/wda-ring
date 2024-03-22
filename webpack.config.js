@@ -16,13 +16,13 @@ const config = {
         hints: 'error',
     },
     entry: {
-        'ring': './ring.js',
-        'background': './background.js'
+        'ring': './src/assets/js/ring.js',
+        'background': './src/assets/js/background.js'
     },
     output: {
         assetModuleFilename: '[name][ext]',
         path: path.resolve(__dirname, 'public'),
-        filename: "[name].js",
+        filename: "./assets/js/[name].js",
         clean: true
     },
     devtool: "source-map",
@@ -40,21 +40,13 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './src/index.html',
         }),
         new CopyPlugin({
             
             patterns: [
-                // {
-                //     from: "./manifest.json",
-                //     globOptions: {
-                //         dot: true,
-                //         gitignore: true,
-                //     },
-                //     to: "./"
-                // },
                 {
-                    from: "./fr.json",
+                    from: "./src/fr.json",
                     globOptions: {
                         dot: true,
                         gitignore: true,
@@ -62,20 +54,20 @@ const config = {
                     to: "./"
                 },
                 {
-                    from: "./sounds",
+                    from: "./src/assets/sounds",
                     globOptions: {
                         dot: true,
                         gitignore: true,
                     },
-                    to: "./sounds"
+                    to: "./assets/sounds"
                 },
                 {
-                    from: "./logo.png",
+                    from: "./src/assets/img",
                     globOptions: {
                         dot: true,
                         gitignore: true,
                     },
-                    to: "./"
+                    to: "./assets/img"
                 },
             ],
         })

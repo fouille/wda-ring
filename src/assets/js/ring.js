@@ -2,7 +2,7 @@ import {
   App
 } from '@wazo/euc-plugins-sdk';
 import i18next from 'i18next';
-const json = require('./manifest.json');
+const json = require('../../manifest.json');
 
 let audio;
 let url;
@@ -79,7 +79,7 @@ const addEventsListener = () => {
 
   playButton.addEventListener("click", () => {
     const ring = ringElem.value;
-    const path = `${url}/sounds/${ring}`;
+    const path = `${url}/assets/sounds/${ring}`;
     stopListenRingbackTone();
     listenRingbackTone(path);
   });
