@@ -2,8 +2,7 @@ import {
   App
 } from '@wazo/euc-plugins-sdk';
 import i18next from 'i18next';
-
-import './background';
+const json = require('./manifest.json');
 
 let audio;
 let url;

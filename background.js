@@ -1,9 +1,9 @@
-import { app } from "./ring";
-
-
+import {
+  App
+} from '@wazo/euc-plugins-sdk';
 let url;
 
-// const app = new App();
+const app = new App();
 
 const ringStorage = (action, ring) => {
   switch(action) {
